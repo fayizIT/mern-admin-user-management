@@ -17,6 +17,7 @@ import generateToken from '../utils/generateToken.js';
      const authAdmin = asyncHandler(async (req, res) => {
         const { email, password } = req.body;
         
+        
         const admin = await Admin.findOne({ email });
 
     
